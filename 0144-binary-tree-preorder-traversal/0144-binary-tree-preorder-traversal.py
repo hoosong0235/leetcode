@@ -9,10 +9,8 @@ class Solution:
         solution = list()
         if root != None:
             solution.append(root.val)
-            if root.left != None:
-                solution += self.preorderTraversal(root.left)
-            if root.right != None:
-                solution += self.preorderTraversal(root.right)
+            solution += self.preorderTraversal(root.left)
+            solution += self.preorderTraversal(root.right)
         return solution
         
         
